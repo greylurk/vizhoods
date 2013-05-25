@@ -1,10 +1,11 @@
 var geojson = [
-  { "geometry": { "type": "Point", "coordinates": [-93.252298, 44.976449] }, "properties": { "id": "gold-medal-park", "zoom": 17 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.255420, 44.980412] }, "properties": { "id": "stone-arch-bridge" } },
-  { "geometry": { "type": "Point", "coordinates": [-93.255583, 44.978187] }, "properties": { "id": "guthrie-theater" } },
-  { "geometry": { "type": "Point", "coordinates": [-93.256830, 44.979338] }, "properties": { "id": "mill-city-ruins" } },
-  { "geometry": { "type": "Point", "coordinates": [-93.257173, 44.978818] }, "properties": { "id": "mill-city-museum" } },
-  { "geometry": { "type": "Point", "coordinates": [-93.254304, 44.980617] }, "properties": { "id": "st-anthony-falls" } }
+  { "geometry": { "type": "Point", "coordinates": [-93.2526  , 44.9781  ] }, "properties": { "id": "cover",             "zoom": 40 } }, // need to keep "cover" for the first section
+  { "geometry": { "type": "Point", "coordinates": [-93.252298, 44.976449] }, "properties": { "id": "gold-medal-park",   "zoom": 40 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255420, 44.980412] }, "properties": { "id": "stone-arch-bridge", "zoom": 40 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255583, 44.978187] }, "properties": { "id": "guthrie-theater",   "zoom": 40 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.256830, 44.979338] }, "properties": { "id": "mill-city-ruins",   "zoom": 40 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.257173, 44.978818] }, "properties": { "id": "mill-city-museum",  "zoom": 40 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.254304, 44.980617] }, "properties": { "id": "st-anthony-falls",  "zoom": 40 } }
 ];
 var tiles = mapbox.layer().tilejson({
   tiles: [ "http://a.tiles.mapbox.com/v3/andrewulven.map-gy04rold/{z}/{x}/{y}.png" ]
@@ -36,6 +37,7 @@ var markers = _(sections).map(function(section) {
 
 // Helper to set the active section.
 var setActive = function(index, ease) {
+        console.log(markers);
   // Set active class on sections, markers.
   _(sections).each(function(s) { s.className = s.className.replace(' active', '') });
   _(markers).each(function(m) { m.element.className = m.element.className.replace(' active', '') });
