@@ -1,22 +1,10 @@
 var geojson = [
-  { "geometry": { "type": "Point", "coordinates": [-93.2526, 44.9781] },
-    "properties": { "id": "cover", "zoom": 17 } },
-  { "geometry": { "type": "Point", "coordinates": [-0.15591514, 51.51830379] },
-    "properties": { "id": "baker" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.07571203, 51.51424049] },
-    "properties": { "id": "aldgate" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.08533793, 51.50438536] },
-    "properties": { "id": "london-bridge" } },
-  { "geometry": { "type": "Point", "coordinates": [0.05991101, 51.48752939] },
-    "properties": { "id": "woolwich" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.18335806, 51.49439521] },
-    "properties": { "id": "gloucester" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.19684993, 51.5033856] },
-    "properties": { "id": "caulfield-gardens" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.10669358, 51.51433123] },
-    "properties": { "id": "telegraph" } },
-  { "geometry": { "type": "Point", "coordinates": [-0.12416858, 51.50779757] },
-    "properties": { "id": "charing-cross" } }
+  { "geometry": { "type": "Point", "coordinates": [-93.252298, 44.976449] }, "properties": { "id": "gold-medal-park", "zoom": 17 } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255420, 44.980412] }, "properties": { "id": "stone-arch-bridge" } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255583, 44.978187] }, "properties": { "id": "guthrie-theater" } },
+  { "geometry": { "type": "Point", "coordinates": [-93.256830, 44.979338] }, "properties": { "id": "mill-city-ruins" } },
+  { "geometry": { "type": "Point", "coordinates": [-93.257173, 44.978818] }, "properties": { "id": "mill-city-museum" } },
+  { "geometry": { "type": "Point", "coordinates": [-93.254304, 44.980617] }, "properties": { "id": "st-anthony-falls" } }
 ];
 var tiles = mapbox.layer().tilejson({
   tiles: [ "http://a.tiles.mapbox.com/v3/andrewulven.map-gy04rold/{z}/{x}/{y}.png" ]
