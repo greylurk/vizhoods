@@ -28,7 +28,7 @@ section a {
   text-shadow:rgba(64,64,64,1) 0px 0px 4px;
   }
 section.active {
-  background:#222;
+  background:#0071bc;
   color:#eee;
   }
 section.active a { color:#eee; }
