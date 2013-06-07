@@ -1,11 +1,11 @@
 var geojson = [
-  { "geometry": { "type": "Point", "coordinates": [-93.2526  , 44.9781  ] }, "properties": { "id": "cover",             "zoom": 40 } }, // need to keep "cover" for the first section
-  { "geometry": { "type": "Point", "coordinates": [-93.252298, 44.976449] }, "properties": { "id": "gold-medal-park",   "zoom": 40 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.255420, 44.980412] }, "properties": { "id": "stone-arch-bridge", "zoom": 40 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.255583, 44.978187] }, "properties": { "id": "guthrie-theater",   "zoom": 40 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.256830, 44.979338] }, "properties": { "id": "mill-city-ruins",   "zoom": 40 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.257173, 44.978818] }, "properties": { "id": "mill-city-museum",  "zoom": 40 } },
-  { "geometry": { "type": "Point", "coordinates": [-93.254304, 44.980617] }, "properties": { "id": "st-anthony-falls",  "zoom": 40 } }
+  { "geometry": { "type": "Point", "coordinates": [-93.2526  , 44.9781  ] }, "properties": { "zoom": 40, "id": "cover",             "sprite": "" } }, // need to keep "cover" for the first section
+  { "geometry": { "type": "Point", "coordinates": [-93.252298, 44.976449] }, "properties": { "zoom": 40, "id": "gold-medal-park",   "sprite": "tree"       } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255583, 44.978187] }, "properties": { "zoom": 40, "id": "guthrie-theater",   "sprite": "theater"    } },
+  { "geometry": { "type": "Point", "coordinates": [-93.257173, 44.978818] }, "properties": { "zoom": 40, "id": "mill-city-museum",  "sprite": "museum"     } },
+  { "geometry": { "type": "Point", "coordinates": [-93.256830, 44.979338] }, "properties": { "zoom": 40, "id": "mill-city-ruins",   "sprite": "ruins"      } },
+  { "geometry": { "type": "Point", "coordinates": [-93.255420, 44.980412] }, "properties": { "zoom": 40, "id": "stone-arch-bridge", "sprite": "ruins"      } },
+  { "geometry": { "type": "Point", "coordinates": [-93.254304, 44.980617] }, "properties": { "zoom": 40, "id": "st-anthony-falls",  "sprite": "binoculars" } }
 ];
 var tiles = mapbox.layer().tilejson({
   tiles: [ "http://a.tiles.mapbox.com/v3/andrewulven.map-gy04rold/{z}/{x}/{y}.png" ]
@@ -17,7 +17,7 @@ var spots = mapbox.markers.layer()
   // DOM element that represents the point.
   .factory(function(f) {
     var el = document.createElement('div');
-    el.className = 'spot spot-' + f.properties.id;
+    el.className = 'spot spot-' + f.properties.sprite;
     return el;
   });
 

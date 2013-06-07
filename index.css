@@ -87,23 +87,33 @@ p { margin:0px; }
   background:url(sprite.png) 120px 120px no-repeat;
   position:absolute;
   }
-.spot-cover { display:none; }
-.spot-baker { background-position:-130px 0px; }
-.spot-baker.active { background-position:-130px -120px; }
-.spot-aldgate { background-position:-260px 0px; }
-.spot-aldgate.active { background-position:-260px -120px; }
-.spot-london-bridge { background-position:-390px 0px; }
-.spot-london-bridge.active { background-position:-390px -120px; }
-.spot-woolwich { background-position:-520px 0px; }
-.spot-woolwich.active { background-position:-520px -120px; }
-.spot-gloucester { background-position:-650px 0px; }
-.spot-gloucester.active { background-position:-650px -120px; }
-.spot-caulfield-gardens { background-position:-780px 0px; }
-.spot-caulfield-gardens.active { background-position:-780px -120px; }
-.spot-telegraph { background-position:-910px 0px; }
-.spot-telegraph.active { background-position:-910px -120px; }
-.spot-charing-cross { background-position:-1040px 0px; }
-.spot-charing-cross.active { background-position:-1040px -120px; }
+.spot-cover                    { display:none; }
+.spot-blank1                   { background-position: -130px    0px; }
+.spot-blank1.active            { background-position: -130px -120px; }
+.spot-blank2                   { background-position: -260px    0px; }
+.spot-blank2.active            { background-position: -260px -120px; }
+.spot-magnifying-glass         { background-position: -390px    0px; }
+.spot-magnifying-glass.active  { background-position: -390px -120px; }
+.spot-teardrop                 { background-position: -520px    0px; }
+.spot-teardrop.active          { background-position: -520px -120px; }
+.spot-heart                    { background-position: -650px    0px; }
+.spot-heart.active             { background-position: -650px -120px; }
+.spot-trophy                   { background-position: -780px    0px; }
+.spot-trophy.active            { background-position: -780px -120px; }
+.spot-person                   { background-position: -910px    0px; }
+.spot-person.active            { background-position: -910px -120px; }
+.spot-star                     { background-position:-1040px    0px; }
+.spot-star.active              { background-position:-1040px -120px; }
+.spot-tree                     { background-position:-1170px    0px; }
+.spot-tree.active              { background-position:-1170px -120px; }
+.spot-museum                   { background-position:-1300px    0px; }
+.spot-museum.active            { background-position:-1300px -120px; }
+.spot-binoculars               { background-position:-1430px    0px; }
+.spot-binoculars.active        { background-position:-1430px -120px; }
+.spot-ruins                    { background-position:-1560px    0px; }
+.spot-ruins.active             { background-position:-1560px -120px; }
+.spot-theater                  { background-position:-1690px    0px; }
+.spot-theater.active           { background-position:-1690px -120px; }
 
 /* Distinguish the "cover page" visually other sections. */
 body.section-0 #map { opacity:0.5; }
